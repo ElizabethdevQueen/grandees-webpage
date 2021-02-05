@@ -340,16 +340,18 @@ header ul li a.active:before{
   }
   .banner-content{
     margin-top: 0;
+    margin-bottom: 3rem;
+    padding: 2rem;
     flex-direction: column-reverse;
   }
   .banner-content .bannerImg{
-    width: 100%;
-    height: 40vh;
-    margin: 20px 0;
+    width: 90%;
+    height: 20vh;
+    margin-bottom: 2rem;
   }
   .banner-content .bannerText {
     max-width: 100%;
-    padding-right: 0;
+    margin-left: 1rem;
   }
   header ul{
     display: none;
@@ -395,6 +397,26 @@ header ul li a.active:before{
     background: url(../Images/close.png);
     background-repeat: no-repeat;
     background-position: 6px;
+  }
+  .about-container{
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 0;
+    left: 0;
+    margin: 0;
+  }
+  .about{
+    padding: 0;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .about-data{
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .services__content{
+    margin-top: 2rem;
   }
   /* <div>Icons made by <a href="https://www.flaticon.com/authors/retinaicons" title="Retinaicons">Retinaicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */
 }
@@ -464,35 +486,41 @@ header ul li a.active:before{
 
 /*========== ABOUT ==========*/
 section{
+  padding: 50px;
+}
+.about{
   padding: 100px;
 }
-
 .about-container{
   position: relative;
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 3rem;
 }
 
 .about-container .about-data{
   position: relative;
   width: 70%;
+  margin-left: -1.5rem;
 }
 
 .about-container .about-data imgSect{
   position: relative;
   width: 100%;
   height: 100%;
+  /* margin-left: -2.5rem; */
 }
 
 .about-container .about-data imgSect img{
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
+  /* margin-left: 2.5rem; */
 }
 
 .titleText{
@@ -512,11 +540,14 @@ section{
 }
 
 /*========== SERVICES ==========*/
-.services__container{
-  row-gap:4rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* width: 100%; */
-  padding-bottom: 100px;
+.services{
+  margin-top: 0;
+}
+.services .services__container{
+  row-gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-bottom: 50px;
+  padding-top: 2rem;
 }
 
 .services__content{
@@ -534,10 +565,6 @@ section{
   font-size: var(--h3-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-1);
-}
-
-.services__description{
-  padding: 0 1.5rem;
 }
 
 /*========== GALLERY ==========*/
@@ -636,8 +663,6 @@ section{
   width: 70%;
   margin-bottom: 10px;
 }
-
-
 
 /*========== FOOTER ==========*/
 footer{
@@ -883,8 +908,8 @@ footer{
     height: 25rem;
   }
 
-  /* .about-container,
+  .about-container,
   .app__container{
     column-gap: 7rem;
-  } */
+  }
 }
